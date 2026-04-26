@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Onde Ver Filmes e Séries - guia informativo para encontrar recomendações de filmes e séries em plataformas oficiais.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Onde Ver Filmes e Séries">
+  <link rel="canonical" href="https://ondeverfilmeseseries.com/">
+  <title>Onde Ver Filmes e Séries | Guia legal de filmes e séries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="legal-top-bar">
+    <i class="fas fa-exclamation-triangle"></i>
+    A Onde Ver Filmes e Séries é um portal informativo. Não vendemos assinaturas, não hospedamos filmes/séries e não fornecemos acesso não autorizado.
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <h1>Onde Ver Filmes e Séries</h1>
+          <p>Guia legal de filmes e séries</p>
+        </a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Buscar recomendação..." aria-label="Buscar recomendação">
+        <button id="searchBtn" type="button" aria-label="Buscar"><i class="fas fa-search"></i></button>
+      </div>
+
+      <button class="mobile-menu-btn" id="menuToggle" type="button" aria-label="Abrir menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="active" href="index.html">Início</a>
+        <a class="" href="catalogo/">Catálogo</a>
+        <a class="" href="blog/">Blog</a>
+        <a class="" href="sobre/">Sobre</a>
+        <a class="" href="faq/">FAQ</a>
+        <a class="" href="contato/">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <div class="container">
+      <section class="hero">
+        <h1>Onde Ver Filmes e Séries: guia para encontrar filmes e séries em plataformas oficiais</h1>
+        <p>Pesquise recomendações, compare categorias e fale com nosso atendimento para receber orientação personalizada sobre onde procurar conteúdos de forma legal e segura.</p>
+        <a href="contato/" class="btn-primary">Falar com atendimento</a>
+      </section>
+
+      <div class="trust-strip">
+        <div class="trust-item"><strong>Sem hospedagem de conteúdo</strong><span class="small-muted">Não armazenamos nem transmitimos filmes, séries ou canais.</span></div>
+        <div class="trust-item"><strong>Orientação informativa</strong><span class="small-muted">Ajudamos você a encontrar opções e plataformas oficiais.</span></div>
+        <div class="trust-item"><strong>Transparência</strong><span class="small-muted">Informamos contato, termos, privacidade e limitações do serviço.</span></div>
+      </div>
+
+      <div class="disclaimer-box">
+        <strong>Aviso importante:</strong> a Onde Ver Filmes e Séries não vende assinatura de streaming, IPTV, canais pagos ou acesso a conteúdos protegidos. Nosso site tem finalidade informativa e recomenda apenas meios oficiais de busca e consumo.
+      </div>
+    </div>
+
+    <div class="container" id="catalogo">
+      <div class="category-tabs" id="categoryTabs">
+        <button class="cat-tab active" type="button" data-cat="todos">🎯 Todos</button>
+        <button class="cat-tab" type="button" data-cat="Ação">Ação</button>
+        <button class="cat-tab" type="button" data-cat="Suspense">Suspense</button>
+        <button class="cat-tab" type="button" data-cat="Terror">Terror</button>
+        <button class="cat-tab" type="button" data-cat="Animação">Animação</button>
+        <button class="cat-tab" type="button" data-cat="Infantil">Infantil</button>
+        <button class="cat-tab" type="button" data-cat="Ficção">Ficção</button>
+        <button class="cat-tab" type="button" data-cat="Comédia">Comédia</button>
+        <button class="cat-tab" type="button" data-cat="Drama">Drama</button>
+        <button class="cat-tab" type="button" data-cat="Aventura">Aventura</button>
+      </div>
+
+      <div class="section-header">
+        <h2><i class="fas fa-film"></i> Recomendações em destaque</h2>
+        <span id="resultCount">Mostrando todos</span>
+      </div>
+
+      <div class="movies-grid" id="allContentGrid"></div>
+
+      <section class="where-box">
+        <h2><i class="fas fa-tv"></i> Plataformas oficiais</h2>
+        <p>A disponibilidade muda conforme região, plano e catálogo. Sempre confirme diretamente no serviço oficial antes de contratar ou assistir.</p>
+        <div class="platform-badges">
+          <span class="badge">Netflix</span>
+          <span class="badge">Prime Video</span>
+          <span class="badge">Disney+</span>
+          <span class="badge">Max</span>
+          <span class="badge">Globoplay</span>
+          <span class="badge">Apple TV+</span>
+          <span class="badge">Paramount+</span>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <h2 class="section-title">Como funciona</h2>
+      <div class="steps-container">
+        <div class="step"><div class="step-number">1</div><h3>Você informa o que procura</h3><p>Filme, série, gênero ou perfil de conteúdo.</p></div>
+        <div class="step"><div class="step-number">2</div><h3>Organizamos sugestões</h3><p>Indicamos caminhos oficiais e categorias úteis.</p></div>
+        <div class="step"><div class="step-number">3</div><h3>Você confirma na plataforma</h3><p>A disponibilidade deve ser validada no serviço oficial.</p></div>
+      </div>
+
+      <div class="cta-card">
+        <h2>Precisa de ajuda para escolher?</h2>
+        <p>Fale com o atendimento e receba uma orientação personalizada. Não solicitamos senhas, dados bancários ou acesso à sua conta de streaming.</p>
+        <a class="btn-primary" href="contato/">Enviar mensagem</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Onde Ver Filmes e Séries</h4>
+          <p><strong>Domínio:</strong> ondeverfilmeseseries.com</p>
+          <p>Portal informativo independente de recomendações.</p>
+        </div>
+        <div>
+          <h4>Institucional</h4>
+          <a href="sobre/">Sobre</a>
+          <a href="faq/">Perguntas Frequentes</a>
+          <a href="politica-de-privacidade/">Política de Privacidade</a>
+          <a href="termos-de-servico/">Termos de Serviço</a>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <a href="https://wa.me/5519988741698" target="_blank" rel="noopener">WhatsApp: (19) 98874-1698</a>
+          <a href="mailto:contato@ondeverfilmeseseries.com">contato@ondeverfilmeseseries.com</a>
+        </div>
+      </div>
+      <div class="legal-footer">
+        <i class="fas fa-shield-alt"></i>
+        Não somos afiliados oficialmente às plataformas citadas, salvo indicação expressa. Marcas pertencem aos seus respectivos titulares.
+      </div>
+      <div class="copyright">&copy; 2026 Onde Ver Filmes e Séries - ondeverfilmeseseries.com</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
